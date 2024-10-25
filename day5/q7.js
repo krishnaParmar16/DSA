@@ -13,8 +13,12 @@ let arr = [
 let matrix=[];
 for(let i=0;i<arr.length;i++)
 {
+    matrix[i]=[]
     for(let j=0;j<arr[i].length;j++)
     {
-        
+        matrix[i][j]=arr[j][i];
     }
 }
+
+
+console.log(matrix);

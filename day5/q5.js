@@ -5,8 +5,7 @@ let arr = [
     [4,15,22],
     [70,82,43]
 ]
-
-// output:9
+// output:82
 let max=0;
 for(let i=0;i<arr.length;i++)
 {
