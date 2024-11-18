@@ -16,10 +16,10 @@ let matrix=[];
 
 for(let i=0;i<arr.length;i++)
 {
-    // matrix[i]=[];
+    matrix[i]=[];
     for(let j=arr[i].length-1;j>=0;j--)
     {
-       console.log(arr[j][i]);
+        matrix[j][i]=arr[j][i]
     }
 }
-// console.log(matrix);
+console.log(matrix);
