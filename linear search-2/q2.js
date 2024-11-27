@@ -9,17 +9,17 @@ let a="hello";
 let arr=a.split('');
    
 
-let start=0;
-let end=arr.length-1;
+let left=0;
+let right=arr.length-1;
 
-while(start<end)
+while(left<right)
 {
-    let temp=arr[start];
-    arr[start]=arr[end];
-    arr[end]=temp;
+    let temp=arr[left];
+    arr[left]=arr[right];
+    arr[right]=temp;
 
-    start++;
-    end--;
+    left++;
+    right--;
 }
 
 console.log(arr.join(''));
