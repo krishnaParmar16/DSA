@@ -5,6 +5,12 @@ function check()
     let str="[({})]"
     let stack=[];
 
+    // let obj={
+    //     ")":"(",
+    //     "}":"{",
+    //     "]":"["
+    // }
+
     for(let i=0;i<str.length;i++)
     {
         if(str[i]=="(" || str[i]=="[" || str[i]=="{")
@@ -13,6 +19,10 @@ function check()
         }
         else if(str[i]==")" || str[i]=="]" || str[i] =="}")
         {
+            // if(stack.pop() != obj[str[i]])
+            // {
+            //     return false;
+            // }
             if(stack.length>0 && (stack[stack.length-1] == "(" && str[i] == ")") || (stack[stack.length-1] == "[" && str[i]==']') || (stack[stack.length-1]=="{" && str[i]=="}"))
             {
                 stack.pop()
