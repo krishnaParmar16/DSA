@@ -1,9 +1,7 @@
 // Find the minimum element in a rotated sorted array.
 
-function min()
-{
-  
-    let arr=[16,11,13,14,15];
+
+    let arr=[26,11,13,14,15];
    let low=0;
    let high=arr.length-1;
 
@@ -20,8 +18,5 @@ function min()
     }
    }
 
-   return arr[low];
+   console.log(arr[low]);
  
-   
-}
-console.log(min());
