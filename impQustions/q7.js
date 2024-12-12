@@ -1,15 +1,15 @@
-// Find the minimum element in a rotated sorted array.
+// // Find the minimum element in a rotated sorted array.
 
-function min()
+function minele()
 {
   
-    let arr=[16,11,13,14,15];
+    let arr=[5,6,7,8,1,2,3,4];
    let low=0;
    let high=arr.length-1;
 
-   while(low<=high)
+   while(low < high)
    {
-    let mid=(Math.floor(low+high)/2);
+    let mid=Math.floor((low+high)/2);
 
     if(arr[mid]>arr[high])
     {
@@ -24,4 +24,5 @@ function min()
  
    
 }
-console.log(min());
+console.log(minele());
+
